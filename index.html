@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Toxcity Evolution - Mayorista de camisetas premium D'Monk para hombre y niño">
-    <meta name="theme-color" content="#1a1a1a">
-    <title>Toxcity Evolution | Mayorista de Camisetas D'Monk Premium</title>
+    <meta name="description" content="Toxcity Evolution - Camisetas Premium D'Monk | Mayorista de Moda">
+    <meta name="theme-color" content="#000000">
+    <title>TOXCITY EVOLUTION | Camisetas Premium D'Monk</title>
     
     <!-- Bootstrap 5.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -13,32 +13,35 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     
-    <!-- Google Fonts - Manrope y Montserrat -->
+    <!-- Google Fonts - Fuentes Premium -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome para iconos adicionales -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS - Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <!-- CSS Personalizado -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Botón Flotante WhatsApp -->
-    <a href="https://wa.me/573001234567?text=Hola%20Toxcity%2C%20quiero%20información%20sobre%20el%20catálogo%20mayorista" 
+    <a href="https://wa.me/573117690843?text=Hola%20Toxcity%2C%20me%20interesa%20solicitar%20el%20catálogo%20mayorista%20de%20camisetas" 
        target="_blank" 
        class="whatsapp-float" 
        title="Contactar por WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- Navbar Sticky con ScrollSpy -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm" data-bs-spy="scroll" data-bs-target="#navbarNav">
-        <div class="container-fluid px-4">
+    <!-- Navbar Premium -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top navbar-premium">
+        <div class="container-fluid px-5">
             <a class="navbar-brand fw-bold" href="#inicio">
-                <img src="logo.svg" alt="Toxcity Logo" height="45" class="me-2">
-                <span class="d-none d-md-inline">TOXCITY EVOLUTION</span>
+                <span class="brand-text">TOXCITY</span>
+                <span class="brand-sub">EVOLUTION</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -46,450 +49,291 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                        <a class="nav-link" href="#productos">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#showcase">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#ventajas">Ventajas</a>
+                        <a class="nav-link" href="#galeria">Galería</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
-                    <li class="nav-item ms-2">
-                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#citaModal">
-                            <i class="bi bi-calendar-event"></i> Reservar Cita
-                        </button>
+                    <li class="nav-item ms-3">
+                        <a href="https://wa.me/573117690843?text=Quiero%20solicitar%20el%20catálogo%20mayorista" 
+                           target="_blank" 
+                           class="btn btn-outline-light btn-sm">
+                            <i class="fab fa-whatsapp"></i> Catálogo
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="inicio" class="hero-section text-white py-5" style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);">
-        <div class="container py-5">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6">
-                    <h1 class="display-4 fw-800 mb-4 animate-fade-in">
-                        Camisetas Premium para tu Negocio Mayorista
-                    </h1>
-                    <p class="lead mb-4 text-light animate-fade-in-delay-1">
-                        Toxcity Evolution S.A.S. es tu socio confiable en venta mayorista de camisetas de calidad. Marca D'Monk con precios competitivos y servicio 24/7.
-                    </p>
-                    <div class="d-flex gap-3 animate-fade-in-delay-2">
-                        <a href="#showcase" class="btn btn-primary btn-lg">
-                            <i class="bi bi-shop"></i> Ver Catálogo
-                        </a>
-                        <a href="https://wa.me/573001234567?text=Hola%20Toxcity%2C%20solicito%20información%20del%20catálogo%20mayorista" 
-                           target="_blank" 
-                           class="btn btn-success btn-lg">
-                            <i class="fab fa-whatsapp"></i> Contactar
-                        </a>
+    <!-- Hero Section Premium -->
+    <section id="inicio" class="hero-premium">
+        <div class="hero-content">
+            <div class="container-fluid h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-lg-6 hero-text">
+                        <h1 class="display-1 fw-800 mb-4" data-aos="fade-up">
+                            TOXCITY<br><span class="text-accent">EVOLUTION</span>
+                        </h1>
+                        <p class="lead mb-5" data-aos="fade-up" data-aos-delay="200">
+                            Camisetas premium para mayoristas. Calidad, estilo y precios competitivos.
+                        </p>
+                        <div class="d-flex gap-3" data-aos="fade-up" data-aos-delay="400">
+                            <a href="https://wa.me/573117690843?text=Quiero%20ver%20el%20catálogo%20completo%20de%20camisetas" 
+                               target="_blank" 
+                               class="btn btn-light btn-lg fw-bold">
+                                Solicitar Catálogo
+                            </a>
+                            <a href="#productos" class="btn btn-outline-light btn-lg fw-bold">
+                                Ver Productos
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="hero-image-container">
-                        <img src="polo-hombre.png" alt="Camiseta Polo Premium" class="img-fluid rounded-lg shadow-lg hover-lift">
+                    <div class="col-lg-6 hero-image">
+                        <div class="image-container" data-aos="zoom-in" data-aos-delay="300">
+                            <img src="polo-hombre.png" alt="Camiseta Premium" class="img-fluid">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Nosotros -->
-    <section id="nosotros" class="py-5 bg-light">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6">
-                    <img src="logo.svg" alt="Toxcity Logo" class="img-fluid" style="max-width: 300px;">
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="display-5 fw-800 mb-4">Sobre Toxcity Evolution</h2>
-                    <p class="fs-5 mb-3">
-                        Somos especialistas en venta mayorista de camisetas de alta calidad para hombre y niño. Con la marca <strong>D'Monk</strong>, ofrecemos:
-                    </p>
-                    <ul class="list-unstyled">
-                        <li class="mb-3">
-                            <i class="bi bi-check-circle-fill text-success me-2"></i>
-                            <strong>Calidad Garantizada:</strong> Materiales premium con control riguroso
-                        </li>
-                        <li class="mb-3">
-                            <i class="bi bi-check-circle-fill text-success me-2"></i>
-                            <strong>Precios Competitivos:</strong> Márgenes justos para tu negocio
-                        </li>
-                        <li class="mb-3">
-                            <i class="bi bi-check-circle-fill text-success me-2"></i>
-                            <strong>Entrega Rápida:</strong> Logística confiable a todo el país
-                        </li>
-                        <li class="mb-3">
-                            <i class="bi bi-check-circle-fill text-success me-2"></i>
-                            <strong>Atención 24/7:</strong> Equipo disponible por WhatsApp
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Showcase de Productos -->
-    <section id="showcase" class="py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-800 mb-3">Nuestro Catálogo</h2>
-                <p class="lead text-muted">Explora nuestra colección de camisetas premium</p>
+    <!-- Productos Destacados -->
+    <section id="productos" class="py-5 bg-light">
+        <div class="container-lg">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-800 mb-3">Colección Destacada</h2>
+                <p class="lead text-muted">Descubre nuestros productos más populares</p>
             </div>
 
-            <!-- Filtros -->
-            <div class="text-center mb-5">
-                <div class="btn-group" role="group">
-                    <input type="radio" class="btn-check" name="filtro" id="filtro-todos" value="todos" checked>
-                    <label class="btn btn-outline-dark" for="filtro-todos">Todos</label>
-
-                    <input type="radio" class="btn-check" name="filtro" id="filtro-hombre" value="hombre">
-                    <label class="btn btn-outline-dark" for="filtro-hombre">Para Hombre</label>
-
-                    <input type="radio" class="btn-check" name="filtro" id="filtro-nino" value="nino">
-                    <label class="btn btn-outline-dark" for="filtro-nino">Para Niño</label>
-                </div>
-            </div>
-
-            <!-- Grid de Productos -->
-            <div class="row g-4" id="productosGrid">
+            <div class="row g-4">
                 <!-- Producto 1 -->
-                <div class="col-md-6 col-lg-4 producto" data-categoria="hombre">
-                    <div class="card h-100 shadow-sm border-0 overflow-hidden product-card">
-                        <div class="product-image-wrapper position-relative">
-                            <img src="polo-hombre.png" 
-                                 class="card-img-top img-fluid lazy-load" 
-                                 alt="Polo Premium Hombre"
-                                 loading="lazy"
-                                 style="height: 350px; object-fit: cover;">
-                            <div class="overlay-hover">
-                                <div class="overlay-content">
-                                    <h5 class="text-white fw-bold">Polo Premium</h5>
-                                    <p class="text-white-50 small">Marca D'Monk</p>
-                                    <a href="https://wa.me/573001234567?text=Interesado%20en%20Polo%20Premium%20Hombre" 
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="product-card premium-card">
+                        <div class="product-image-wrapper">
+                            <img src="polo-hombre.png" alt="Polo Premium" class="img-fluid">
+                            <div class="overlay-premium">
+                                <div class="overlay-text">
+                                    <h5>Polo Premium</h5>
+                                    <p>Marca D'Monk</p>
+                                    <a href="https://wa.me/573117690843?text=Interesado%20en%20Polo%20Premium" 
                                        target="_blank" 
-                                       class="btn btn-success btn-sm">
-                                        <i class="fab fa-whatsapp"></i> Consultar
+                                       class="btn btn-light btn-sm">
+                                        Consultar
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Polo Premium Hombre</h5>
-                            <p class="card-text text-muted small">
-                                Disponible en: Negro, Blanco, Azul, Rojo
-                            </p>
+                        <div class="product-info p-4">
+                            <h5 class="fw-bold">Polo Premium Hombre</h5>
+                            <p class="text-muted small">Disponible en múltiples colores</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <span class="badge bg-success">Bestseller</span>
-                                <small class="text-warning">
-                                    <i class="bi bi-star-fill"></i> 4.9/5
-                                </small>
+                                <span class="badge bg-dark">Bestseller</span>
+                                <small class="text-warning"><i class="bi bi-star-fill"></i> 4.9/5</small>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Producto 2 -->
-                <div class="col-md-6 col-lg-4 producto" data-categoria="hombre">
-                    <div class="card h-100 shadow-sm border-0 overflow-hidden product-card">
-                        <div class="product-image-wrapper position-relative">
-                            <img src="cuello-redondo-hombre.webp" 
-                                 class="card-img-top img-fluid lazy-load" 
-                                 alt="Cuello Redondo Hombre"
-                                 loading="lazy"
-                                 style="height: 350px; object-fit: cover;">
-                            <div class="overlay-hover">
-                                <div class="overlay-content">
-                                    <h5 class="text-white fw-bold">Cuello Redondo</h5>
-                                    <p class="text-white-50 small">Marca D'Monk</p>
-                                    <a href="https://wa.me/573001234567?text=Interesado%20en%20Cuello%20Redondo%20Hombre" 
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-card premium-card">
+                        <div class="product-image-wrapper">
+                            <img src="cuello-redondo-hombre.webp" alt="Cuello Redondo" class="img-fluid">
+                            <div class="overlay-premium">
+                                <div class="overlay-text">
+                                    <h5>Cuello Redondo</h5>
+                                    <p>Marca D'Monk</p>
+                                    <a href="https://wa.me/573117690843?text=Interesado%20en%20Cuello%20Redondo" 
                                        target="_blank" 
-                                       class="btn btn-success btn-sm">
-                                        <i class="fab fa-whatsapp"></i> Consultar
+                                       class="btn btn-light btn-sm">
+                                        Consultar
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Cuello Redondo Hombre</h5>
-                            <p class="card-text text-muted small">
-                                Disponible en: Beige, Negro, Gris, Blanco
-                            </p>
+                        <div class="product-info p-4">
+                            <h5 class="fw-bold">Cuello Redondo Hombre</h5>
+                            <p class="text-muted small">Diseño clásico y moderno</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <span class="badge bg-info">Popular</span>
-                                <small class="text-warning">
-                                    <i class="bi bi-star-fill"></i> 4.8/5
-                                </small>
+                                <span class="badge bg-dark">Popular</span>
+                                <small class="text-warning"><i class="bi bi-star-fill"></i> 4.8/5</small>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Producto 3 -->
-                <div class="col-md-6 col-lg-4 producto" data-categoria="nino">
-                    <div class="card h-100 shadow-sm border-0 overflow-hidden product-card">
-                        <div class="product-image-wrapper position-relative">
-                            <div class="ratio ratio-1x1" style="height: 350px;">
-                                <video class="lazy-load" controls loading="lazy">
-                                    <source src="video-nino.mp4" type="video/mp4">
-                                    Tu navegador no soporta video HTML5
-                                </video>
-                            </div>
-                            <div class="overlay-hover">
-                                <div class="overlay-content">
-                                    <h5 class="text-white fw-bold">Camiseta Niño</h5>
-                                    <p class="text-white-50 small">Marca D'Monk</p>
-                                    <a href="https://wa.me/573001234567?text=Interesado%20en%20Camiseta%20Niño%20D'Monk" 
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-card premium-card">
+                        <div class="product-image-wrapper">
+                            <video class="img-fluid" controls>
+                                <source src="video-nino.mp4" type="video/mp4">
+                            </video>
+                            <div class="overlay-premium">
+                                <div class="overlay-text">
+                                    <h5>Camiseta Niño</h5>
+                                    <p>Marca D'Monk</p>
+                                    <a href="https://wa.me/573117690843?text=Interesado%20en%20Camiseta%20Niño" 
                                        target="_blank" 
-                                       class="btn btn-success btn-sm">
-                                        <i class="fab fa-whatsapp"></i> Consultar
+                                       class="btn btn-light btn-sm">
+                                        Consultar
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Camiseta Niño D'Monk</h5>
-                            <p class="card-text text-muted small">
-                                Disponible en: Múltiples colores y estampados
-                            </p>
+                        <div class="product-info p-4">
+                            <h5 class="fw-bold">Camiseta Niño D'Monk</h5>
+                            <p class="text-muted small">Colores y diseños variados</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <span class="badge bg-warning">Económica</span>
-                                <small class="text-warning">
-                                    <i class="bi bi-star-fill"></i> 4.7/5
-                                </small>
+                                <span class="badge bg-dark">Económica</span>
+                                <small class="text-warning"><i class="bi bi-star-fill"></i> 4.7/5</small>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Sección Ventajas -->
-    <section id="ventajas" class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-800 mb-3">¿Por Qué Elegirnos?</h2>
-                <p class="lead text-muted">Somos tu mejor opción en venta mayorista</p>
-            </div>
-
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm text-center p-4 advantage-card">
-                        <div class="icon-box mb-3">
-                            <i class="bi bi-gem fs-1 text-primary"></i>
-                        </div>
-                        <h5 class="fw-bold mb-2">Calidad Premium</h5>
-                        <p class="text-muted">Materiales de primera calidad con control riguroso en cada etapa de producción.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm text-center p-4 advantage-card">
-                        <div class="icon-box mb-3">
-                            <i class="bi bi-tag fs-1 text-success"></i>
-                        </div>
-                        <h5 class="fw-bold mb-2">Precios Competitivos</h5>
-                        <p class="text-muted">Precios mayoristas reales con descuentos progresivos por volumen.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm text-center p-4 advantage-card">
-                        <div class="icon-box mb-3">
-                            <i class="bi bi-truck fs-1 text-info"></i>
-                        </div>
-                        <h5 class="fw-bold mb-2">Entrega Rápida</h5>
-                        <p class="text-muted">Logística confiable con entregas puntuales a todo el país.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm text-center p-4 advantage-card">
-                        <div class="icon-box mb-3">
-                            <i class="bi bi-headset fs-1 text-warning"></i>
-                        </div>
-                        <h5 class="fw-bold mb-2">Atención 24/7</h5>
-                        <p class="text-muted">Equipo disponible por WhatsApp sin importar la hora del día.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm text-center p-4 advantage-card">
-                        <div class="icon-box mb-3">
-                            <i class="bi bi-palette fs-1 text-danger"></i>
-                        </div>
-                        <h5 class="fw-bold mb-2">Variedad de Estilos</h5>
-                        <p class="text-muted">Múltiples diseños, colores y tallas disponibles para tu negocio.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm text-center p-4 advantage-card">
-                        <div class="icon-box mb-3">
-                            <i class="bi bi-handshake fs-1 text-secondary"></i>
-                        </div>
-                        <h5 class="fw-bold mb-2">Soporte Personalizado</h5>
-                        <p class="text-muted">Asesoría comercial dedicada a las necesidades de tu negocio.</p>
-                    </div>
-                </div>
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="https://wa.me/573117690843?text=Quiero%20ver%20el%20catálogo%20completo%20con%20todos%20los%20productos" 
+                   target="_blank" 
+                   class="btn btn-dark btn-lg fw-bold">
+                    Ver Catálogo Completo
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Sección Contacto -->
-    <section id="contacto" class="py-5" style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);">
-        <div class="container">
-            <div class="text-center mb-5 text-white">
-                <h2 class="display-5 fw-800 mb-3">Ponte en Contacto</h2>
-                <p class="lead">Estamos disponibles para responder tus preguntas</p>
+    <!-- Galería Instagram -->
+    <section id="galeria" class="py-5 bg-black text-white">
+        <div class="container-lg">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-800 mb-3">Síguenos en Instagram</h2>
+                <p class="lead text-light">Descubre las últimas tendencias y colecciones</p>
             </div>
 
-            <div class="row g-4">
-                <div class="col-md-4 text-center text-white">
-                    <div class="contact-box p-4">
-                        <i class="bi bi-whatsapp fs-1 text-success mb-3"></i>
-                        <h5 class="fw-bold">WhatsApp</h5>
-                        <p class="text-white-50">Disponible 24/7</p>
-                        <a href="https://wa.me/573001234567" target="_blank" class="btn btn-success btn-sm">
-                            <i class="fab fa-whatsapp"></i> Contactar
-                        </a>
-                    </div>
-                </div>
+            <!-- Instagram Feed Embed -->
+            <div class="instagram-container" data-aos="fade-up">
+                <iframe src="https://www.instagram.com/toxcityevolution/embed" width="100%" height="600" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+            </div>
 
-                <div class="col-md-4 text-center text-white">
-                    <div class="contact-box p-4">
-                        <i class="bi bi-envelope fs-1 text-primary mb-3"></i>
-                        <h5 class="fw-bold">Email</h5>
-                        <p class="text-white-50">Respuesta rápida</p>
-                        <a href="mailto:info@toxcity.com" class="btn btn-primary btn-sm">
-                            <i class="bi bi-envelope"></i> Enviar
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md-4 text-center text-white">
-                    <div class="contact-box p-4">
-                        <i class="bi bi-calendar-event fs-1 text-warning mb-3"></i>
-                        <h5 class="fw-bold">Reservar Cita</h5>
-                        <p class="text-white-50">Visita personalizada</p>
-                        <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#citaModal">
-                            <i class="bi bi-calendar-event"></i> Agendar
-                        </button>
-                    </div>
-                </div>
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="https://www.instagram.com/toxcityevolution/" 
+                   target="_blank" 
+                   class="btn btn-outline-light btn-lg fw-bold">
+                    <i class="fab fa-instagram"></i> Seguir en Instagram
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Redes Sociales -->
+    <!-- Ventajas -->
     <section class="py-5 bg-light">
-        <div class="container text-center">
-            <h2 class="display-6 fw-800 mb-5">Síguenos</h2>
-            <div class="d-flex justify-content-center gap-4">
-                <a href="https://instagram.com" target="_blank" class="social-link">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://tiktok.com" target="_blank" class="social-link">
-                    <i class="fab fa-tiktok"></i>
-                </a>
-                <a href="https://facebook.com" target="_blank" class="social-link">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://wa.me/573001234567" target="_blank" class="social-link">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
+        <div class="container-lg">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up">
+                    <div class="advantage-card text-center p-4">
+                        <i class="bi bi-gem fs-1 text-dark mb-3"></i>
+                        <h5 class="fw-bold">Calidad Premium</h5>
+                        <p class="text-muted small">Materiales de primera calidad</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="advantage-card text-center p-4">
+                        <i class="bi bi-tag fs-1 text-dark mb-3"></i>
+                        <h5 class="fw-bold">Precios Competitivos</h5>
+                        <p class="text-muted small">Descuentos por volumen</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="advantage-card text-center p-4">
+                        <i class="bi bi-truck fs-1 text-dark mb-3"></i>
+                        <h5 class="fw-bold">Entrega Rápida</h5>
+                        <p class="text-muted small">Logística confiable</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="advantage-card text-center p-4">
+                        <i class="bi bi-headset fs-1 text-dark mb-3"></i>
+                        <h5 class="fw-bold">Atención 24/7</h5>
+                        <p class="text-muted small">Disponible por WhatsApp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-5 bg-black text-white">
+        <div class="container-lg">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-800 mb-3">Ponte en Contacto</h2>
+                <p class="lead">Estamos disponibles para ti</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4 text-center" data-aos="fade-up">
+                    <div class="contact-box p-4">
+                        <i class="fab fa-whatsapp fs-1 text-success mb-3"></i>
+                        <h5 class="fw-bold">WhatsApp</h5>
+                        <p class="text-light mb-3">+57 311 769 0843</p>
+                        <a href="https://wa.me/573117690843" target="_blank" class="btn btn-success btn-sm">
+                            Contactar
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-box p-4">
+                        <i class="fab fa-instagram fs-1 text-light mb-3"></i>
+                        <h5 class="fw-bold">Instagram</h5>
+                        <p class="text-light mb-3">@toxcityevolution</p>
+                        <a href="https://www.instagram.com/toxcityevolution/" target="_blank" class="btn btn-outline-light btn-sm">
+                            Seguir
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-box p-4">
+                        <i class="bi bi-envelope fs-1 text-light mb-3"></i>
+                        <h5 class="fw-bold">Email</h5>
+                        <p class="text-light mb-3">info@toxcity.com</p>
+                        <a href="mailto:info@toxcity.com" class="btn btn-outline-light btn-sm">
+                            Enviar
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
-        <div class="container">
-            <div class="row g-4 mb-4">
-                <div class="col-md-4">
-                    <h5 class="fw-bold mb-3">Toxcity Evolution</h5>
-                    <p class="text-white-50">Especialistas en venta mayorista de camisetas premium marca D'Monk.</p>
+    <footer class="bg-black text-white py-4 border-top border-secondary">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2026 Toxcity Evolution S.A.S. Todos los derechos reservados.</p>
                 </div>
-                <div class="col-md-4">
-                    <h5 class="fw-bold mb-3">Enlaces</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#inicio" class="text-white-50 text-decoration-none">Inicio</a></li>
-                        <li><a href="#showcase" class="text-white-50 text-decoration-none">Productos</a></li>
-                        <li><a href="#contacto" class="text-white-50 text-decoration-none">Contacto</a></li>
-                    </ul>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://www.instagram.com/toxcityevolution/" class="text-light me-3">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/573117690843" class="text-light">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
                 </div>
-                <div class="col-md-4">
-                    <h5 class="fw-bold mb-3">Contacto</h5>
-                    <p class="text-white-50">
-                        <i class="bi bi-whatsapp"></i> +57 300 123 4567<br>
-                        <i class="bi bi-envelope"></i> info@toxcity.com
-                    </p>
-                </div>
-            </div>
-            <hr class="bg-white-50">
-            <div class="text-center text-white-50">
-                <p>&copy; 2026 Toxcity Evolution S.A.S. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Modal Reservar Cita -->
-    <div class="modal fade" id="citaModal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header bg-dark text-white">
-                    <h5 class="modal-title fw-bold">
-                        <i class="bi bi-calendar-event"></i> Reservar Cita
-                    </h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="citaForm" class="needs-validation" novalidate>
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label fw-bold">Nombre Completo</label>
-                            <input type="text" class="form-control" id="nombre" required>
-                            <div class="invalid-feedback">Por favor ingresa tu nombre</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label fw-bold">Email</label>
-                            <input type="email" class="form-control" id="email" required>
-                            <div class="invalid-feedback">Por favor ingresa un email válido</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="telefono" class="form-label fw-bold">Teléfono</label>
-                            <input type="tel" class="form-control" id="telefono" required>
-                            <div class="invalid-feedback">Por favor ingresa tu teléfono</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="empresa" class="form-label fw-bold">Nombre de la Empresa</label>
-                            <input type="text" class="form-control" id="empresa" required>
-                            <div class="invalid-feedback">Por favor ingresa el nombre de tu empresa</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="fecha" class="form-label fw-bold">Fecha Preferida</label>
-                            <input type="date" class="form-control" id="fecha" required>
-                            <div class="invalid-feedback">Por favor selecciona una fecha</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="mensaje" class="form-label fw-bold">Mensaje Adicional</label>
-                            <textarea class="form-control" id="mensaje" rows="3" placeholder="Cuéntanos más sobre tu negocio..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-success w-100">
-                            <i class="fab fa-whatsapp"></i> Enviar por WhatsApp
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Bootstrap 5.3 JS -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <!-- Script Personalizado -->
     <script src="script.js"></script>
